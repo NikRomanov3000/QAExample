@@ -7,7 +7,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-public class registrationFormUITest {
+public class RegistrationFormUITest {
     private ChromeDriver driver;
     @Before
     public void prepareDriver(){
@@ -16,7 +16,7 @@ public class registrationFormUITest {
     }
 
     @Test
-    public void TestCaseRegistrationForm() throws InterruptedException {
+    public void testCaseRegistrationForm() throws InterruptedException {
         driver.get("https://twitter.com/explore");
 
         WebElement regButton = driver.findElement(By.cssSelector("#react-root > div > div > div.r-1d2f490.r-u8s1d.r-zchlnj.r-ipm5af.r-184en5c > div > div.css-1dbjc4n.r-1awozwy.r-14lw9ot.r-1gkumvb.r-1efd50x.r-5kkj8d.r-18u37iz.r-16y2uox.r-1szxp23.r-1swwhx3.r-1j3t67a.r-1qxgc49 > div > div > div.css-1dbjc4n.r-16y2uox.r-1n0xq6e > a > div"));
