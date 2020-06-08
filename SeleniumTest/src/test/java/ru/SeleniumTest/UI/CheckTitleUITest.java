@@ -21,12 +21,11 @@ public class CheckTitleUITest {
         driver.get("https://eda.yandex");
         String pageTitle = driver.getTitle();
         Assert.assertTrue(pageTitle.equals("Быстрая доставка еды из ресторанов в Москве — Яндекс.Еда"));
-        //driver.quit();
     }
 
     @After
     public void closeTest(){
-        //driver.quit();
+        //driver.quit(); //раскоментить для закрытия Chrome после теста
         // System.out.println("Chrome is close!");
     }
 }

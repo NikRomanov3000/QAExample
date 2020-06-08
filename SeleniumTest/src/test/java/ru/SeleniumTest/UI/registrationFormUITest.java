@@ -22,7 +22,7 @@ public class registrationFormUITest {
         WebElement regButton = driver.findElement(By.cssSelector("#react-root > div > div > div.r-1d2f490.r-u8s1d.r-zchlnj.r-ipm5af.r-184en5c > div > div.css-1dbjc4n.r-1awozwy.r-14lw9ot.r-1gkumvb.r-1efd50x.r-5kkj8d.r-18u37iz.r-16y2uox.r-1szxp23.r-1swwhx3.r-1j3t67a.r-1qxgc49 > div > div > div.css-1dbjc4n.r-16y2uox.r-1n0xq6e > a > div"));
         regButton.click();
 
-        Thread.sleep(2500);//пауза для прогурзки странички
+        Thread.sleep(1500);//пауза для прогурзки странички
 
         WebElement nameBox = driver.findElement(By.xpath("/html/body/div/div/div/div[2]/main/div/div/div/div[2]/div[2]/div/div[2]/label/div/div[2]/div/input"));
         nameBox.sendKeys("PepperoniDog69420");
@@ -30,7 +30,7 @@ public class registrationFormUITest {
         WebElement phoneBox = driver.findElement(By.xpath("/html/body/div/div/div/div[2]/main/div/div/div/div[2]/div[2]/div/div[3]/label/div/div[2]/div/input"));
         phoneBox.sendKeys("79154172587");
 
-        Thread.sleep(1000);
+        Thread.sleep(1500);
 
         WebElement nextButton1 = driver.findElement(By.cssSelector("#react-root > div > div > div.css-1dbjc4n.r-13qz1uu.r-417010 > main > div > div > div > div.css-1dbjc4n.r-6koalj.r-16y2uox > div.css-1dbjc4n.r-1h3ijdo.r-136ojw6 > div > div > div > div.css-1dbjc4n.r-obd0qt.r-1pz39u2.r-1t2qqvi.r-16y2uox.r-1wbh5a2.r-1777fci.r-1joea0r.r-1vsu8ta.r-18qmn74 > div"));
         nextButton1.click();
@@ -45,11 +45,10 @@ public class registrationFormUITest {
         okButton.click();
 
         //Дальше форму тестировать нет смысла, так как надо подтверждать номер телеофна
-
     }
 
     @After
     public void closeTest(){
-        //driver.quit();
+        //driver.quit(); //раскоментить для закрытия Chrome после теста
     }
 }
